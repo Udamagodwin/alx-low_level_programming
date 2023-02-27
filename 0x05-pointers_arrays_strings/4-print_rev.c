@@ -2,19 +2,19 @@
 
 /**
 *_puts - print a strings in reverse form
-*@a: string to be printed
+*@s: pointer to the string to be printed
 */
 void print_rev(char *s)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		i++;
-	}
-	for (i = i - 1; i >= 0; i++)
-	{
-		_putchar(s[i]);
+		while (i--)
+		{
+			_putchar(s[i]);
+		}
 	}
 	_putchar('\n');
 }
