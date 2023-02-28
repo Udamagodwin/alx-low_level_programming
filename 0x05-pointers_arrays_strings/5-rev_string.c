@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
-*rev_string - reverse a string
+*rev_string - function that reverses a string
 *@s: string to reversed
-*Return:n nothing
+*Return: nothing
 */
 void rev_string(char *s)
 {
@@ -22,5 +22,6 @@ void rev_string(char *s)
 		s[i] = s[aut];
 		s[aut] = rv;
 		aut++;
+		i--;
 	}
 }
